@@ -1,0 +1,60 @@
+{
+    "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+    "description": "Public schema for events triggered by flow nodes",
+    "self": {
+        "vendor": "com.nitiai",
+        "name": "raw_events_public",
+        "format": "jsonschema",
+        "version": "1-0-0"
+    },
+    "type": "object",
+    "properties": {
+        "eventId" : {
+            "type": "string"
+        },
+        "timestamp" : {
+            "type": "string"
+        },
+        "eventType" : {
+            "type": "string"
+        },
+        "source" : {
+            "type": "string"
+        },
+        "userId" : {
+            "type": "string"
+        },
+        "flowId": {
+            "type": "string"
+        },
+        "nodeId" : {
+            "type": "string"
+        }, 
+        "nodeParentId" : {
+            "type": "string"
+        },
+        "nodeName" : {
+            "type": "string"
+        },
+        "podId" : {
+            "type": "string"
+        },
+        "cohortId" : {
+            "type": "string"
+        }
+    },
+    "required": [
+        "eventId",
+        "timestamp",
+        "eventType",
+        "source",
+        "userId",
+        "flowId",
+        "nodeId", 
+        "nodeParentId",
+        "nodeName",
+        "podId",
+        "cohortId"
+    ],
+    "additionalProperties": false
+}
